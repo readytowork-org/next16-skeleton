@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --check ./ --write && eslint --ignore-path .eslintignore --fix",
-    "swagger-gen": "node --env-file .env src/services/codegen.mjs && yarn run format"
+    "swagger-gen": "node --env-file .env src/services/codegen.mjs && yarn run format",
+    "link-skills": "bash scripts/link-agent-skills.sh"
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
